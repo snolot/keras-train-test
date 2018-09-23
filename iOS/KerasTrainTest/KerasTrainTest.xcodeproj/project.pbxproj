@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B229FD9215830260015F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B229FD8215830260015F45C /* AppDelegate.swift */; };
+		8B229FDB215830260015F45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B229FDA215830260015F45C /* ViewController.swift */; };
+		8B229FDE215830260015F45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B229FDC215830260015F45C /* Main.storyboard */; };
+		8B229FE0215830270015F45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B229FDF215830270015F45C /* Assets.xcassets */; };
+		8B229FE3215830280015F45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B229FE1215830280015F45C /* LaunchScreen.storyboard */; };
+		8B229FEE215830280015F45C /* KerasTrainTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B229FED215830280015F45C /* KerasTrainTestTests.swift */; };
+		8B229FF9215830280015F45C /* KerasTrainTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B229FF8215830280015F45C /* KerasTrainTestUITests.swift */; };
+		8B22A0072158305B0015F45C /* sentiment_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B22A0062158305B0015F45C /* sentiment_model.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B229FEA215830280015F45C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B229FCD215830260015F45C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B229FD4215830260015F45C;
+			remoteInfo = KerasTrainTest;
+		};
+		8B229FF5215830280015F45C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B229FCD215830260015F45C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B229FD4215830260015F45C;
+			remoteInfo = KerasTrainTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B229FD5215830260015F45C /* KerasTrainTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KerasTrainTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B229FD8215830260015F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B229FDA215830260015F45C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B229FDD215830260015F45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B229FDF215830270015F45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B229FE2215830280015F45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B229FE4215830280015F45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B229FE9215830280015F45C /* KerasTrainTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KerasTrainTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B229FED215830280015F45C /* KerasTrainTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerasTrainTestTests.swift; sourceTree = "<group>"; };
+		8B229FEF215830280015F45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B229FF4215830280015F45C /* KerasTrainTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KerasTrainTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B229FF8215830280015F45C /* KerasTrainTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerasTrainTestUITests.swift; sourceTree = "<group>"; };
+		8B229FFA215830280015F45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B22A0062158305B0015F45C /* sentiment_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = sentiment_model.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B229FD2215830260015F45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FE6215830280015F45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FF1215830280015F45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B229FCC215830260015F45C = {
+			isa = PBXGroup;
+			children = (
+				8B229FD7215830260015F45C /* KerasTrainTest */,
+				8B229FEC215830280015F45C /* KerasTrainTestTests */,
+				8B229FF7215830280015F45C /* KerasTrainTestUITests */,
+				8B229FD6215830260015F45C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B229FD6215830260015F45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B229FD5215830260015F45C /* KerasTrainTest.app */,
+				8B229FE9215830280015F45C /* KerasTrainTestTests.xctest */,
+				8B229FF4215830280015F45C /* KerasTrainTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B229FD7215830260015F45C /* KerasTrainTest */ = {
+			isa = PBXGroup;
+			children = (
+				8B22A0062158305B0015F45C /* sentiment_model.mlmodel */,
+				8B229FD8215830260015F45C /* AppDelegate.swift */,
+				8B229FDA215830260015F45C /* ViewController.swift */,
+				8B229FDC215830260015F45C /* Main.storyboard */,
+				8B229FDF215830270015F45C /* Assets.xcassets */,
+				8B229FE1215830280015F45C /* LaunchScreen.storyboard */,
+				8B229FE4215830280015F45C /* Info.plist */,
+			);
+			path = KerasTrainTest;
+			sourceTree = "<group>";
+		};
+		8B229FEC215830280015F45C /* KerasTrainTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B229FED215830280015F45C /* KerasTrainTestTests.swift */,
+				8B229FEF215830280015F45C /* Info.plist */,
+			);
+			path = KerasTrainTestTests;
+			sourceTree = "<group>";
+		};
+		8B229FF7215830280015F45C /* KerasTrainTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B229FF8215830280015F45C /* KerasTrainTestUITests.swift */,
+				8B229FFA215830280015F45C /* Info.plist */,
+			);
+			path = KerasTrainTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B229FD4215830260015F45C /* KerasTrainTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B229FFD215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTest" */;
+			buildPhases = (
+				8B229FD1215830260015F45C /* Sources */,
+				8B229FD2215830260015F45C /* Frameworks */,
+				8B229FD3215830260015F45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KerasTrainTest;
+			productName = KerasTrainTest;
+			productReference = 8B229FD5215830260015F45C /* KerasTrainTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B229FE8215830280015F45C /* KerasTrainTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B22A000215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTestTests" */;
+			buildPhases = (
+				8B229FE5215830280015F45C /* Sources */,
+				8B229FE6215830280015F45C /* Frameworks */,
+				8B229FE7215830280015F45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B229FEB215830280015F45C /* PBXTargetDependency */,
+			);
+			name = KerasTrainTestTests;
+			productName = KerasTrainTestTests;
+			productReference = 8B229FE9215830280015F45C /* KerasTrainTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B229FF3215830280015F45C /* KerasTrainTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B22A003215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTestUITests" */;
+			buildPhases = (
+				8B229FF0215830280015F45C /* Sources */,
+				8B229FF1215830280015F45C /* Frameworks */,
+				8B229FF2215830280015F45C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B229FF6215830280015F45C /* PBXTargetDependency */,
+			);
+			name = KerasTrainTestUITests;
+			productName = KerasTrainTestUITests;
+			productReference = 8B229FF4215830280015F45C /* KerasTrainTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B229FCD215830260015F45C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sylvain Nolot";
+				TargetAttributes = {
+					8B229FD4215830260015F45C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8B229FE8215830280015F45C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8B229FD4215830260015F45C;
+					};
+					8B229FF3215830280015F45C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8B229FD4215830260015F45C;
+					};
+				};
+			};
+			buildConfigurationList = 8B229FD0215830260015F45C /* Build configuration list for PBXProject "KerasTrainTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B229FCC215830260015F45C;
+			productRefGroup = 8B229FD6215830260015F45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B229FD4215830260015F45C /* KerasTrainTest */,
+				8B229FE8215830280015F45C /* KerasTrainTestTests */,
+				8B229FF3215830280015F45C /* KerasTrainTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B229FD3215830260015F45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B229FE3215830280015F45C /* LaunchScreen.storyboard in Resources */,
+				8B229FE0215830270015F45C /* Assets.xcassets in Resources */,
+				8B229FDE215830260015F45C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FE7215830280015F45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FF2215830280015F45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B229FD1215830260015F45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B229FDB215830260015F45C /* ViewController.swift in Sources */,
+				8B22A0072158305B0015F45C /* sentiment_model.mlmodel in Sources */,
+				8B229FD9215830260015F45C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FE5215830280015F45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B229FEE215830280015F45C /* KerasTrainTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B229FF0215830280015F45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B229FF9215830280015F45C /* KerasTrainTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B229FEB215830280015F45C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B229FD4215830260015F45C /* KerasTrainTest */;
+			targetProxy = 8B229FEA215830280015F45C /* PBXContainerItemProxy */;
+		};
+		8B229FF6215830280015F45C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B229FD4215830260015F45C /* KerasTrainTest */;
+			targetProxy = 8B229FF5215830280015F45C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B229FDC215830260015F45C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B229FDD215830260015F45C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B229FE1215830280015F45C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B229FE2215830280015F45C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B229FFB215830280015F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B229FFC215830280015F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B229FFE215830280015F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B229FFF215830280015F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B22A001215830280015F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KerasTrainTest.app/KerasTrainTest";
+			};
+			name = Debug;
+		};
+		8B22A002215830280015F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KerasTrainTest.app/KerasTrainTest";
+			};
+			name = Release;
+		};
+		8B22A004215830280015F45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KerasTrainTest;
+			};
+			name = Debug;
+		};
+		8B22A005215830280015F45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SLL49S96Q5;
+				INFOPLIST_FILE = KerasTrainTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emakina.KerasTrainTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KerasTrainTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B229FD0215830260015F45C /* Build configuration list for PBXProject "KerasTrainTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B229FFB215830280015F45C /* Debug */,
+				8B229FFC215830280015F45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B229FFD215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B229FFE215830280015F45C /* Debug */,
+				8B229FFF215830280015F45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B22A000215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B22A001215830280015F45C /* Debug */,
+				8B22A002215830280015F45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B22A003215830280015F45C /* Build configuration list for PBXNativeTarget "KerasTrainTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B22A004215830280015F45C /* Debug */,
+				8B22A005215830280015F45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B229FCD215830260015F45C /* Project object */;
+}
