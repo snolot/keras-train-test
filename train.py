@@ -112,5 +112,6 @@ print('Test accuracy:', acc)
 
 print('------------------------')
 print(model.predict(sequence.pad_sequences(np.array([[0, 0, 0, 2]]), maxlen=maxlen)))
+model.save('sentiment_model.h5')
 
 convert(model)
